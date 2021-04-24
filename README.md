@@ -1,7 +1,3 @@
-<a href="https://www.ramotion.com/agency/app-development/?utm_source=gthb&utm_medium=repo&utm_campaign=circle-menu-android"><img src="https://github.com/Ramotion/folding-cell/blob/master/header.png"></a>
-
-<a href="https://github.com/Ramotion/circle-menu-android">
-<img align="left" src="https://github.com/Ramotion/circle-menu-android/blob/master/preview.gif" width="480" height="360" /></a>
 
 <p><h1 align="left">CIRCLE MENU [JAVA]</h1></p>
 
@@ -10,21 +6,9 @@
 
 ___
 
-
 <p><h6>We specialize in the designing and coding of custom UI for Mobile Apps and Websites.</h6>
-<a href="https://www.ramotion.com/agency/app-development/?utm_source=gthb&utm_medium=repo&utm_campaign=circle-menu-android">
-<img src="https://github.com/ramotion/gliding-collection/raw/master/contact_our_team@2x.png" width="187" height="34"></a>
-</p>
-<p><h6>Stay tuned for the latest updates:</h6>
-<a href="https://goo.gl/rPFpid" >
-<img src="https://i.imgur.com/ziSqeSo.png/" width="156" height="28"></a></p>
 
 </br>
-
-[![Twitter](https://img.shields.io/badge/Twitter-@Ramotion-blue.svg?style=flat)](http://twitter.com/Ramotion)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/42eb7b00b93645c0812c045ab26cb3b7)](https://www.codacy.com/app/dvg4000/circle-menu-android?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Ramotion/circle-menu-android&amp;utm_campaign=Badge_Grade)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/Ramotion)
-
 
 ## Requirements
 ​
