@@ -132,9 +132,8 @@ Here are the attributes you can specify through XML or related setters:
 
 <br>
 
-## 🗂 Check this library on other language:
-<a href="https://github.com/Ramotion/circle-menu"> 
-<img src="https://github.com/ramotion/navigation-stack/raw/master/Swift@2x.png" width="178" height="81"></a>
+## 🗂 Check this library on other language From Ramotion :
+
 <a href="https://github.com/Ramotion/react-native-circle-menu"> 
 <img src="https://github.com/ramotion/navigation-stack/raw/master/React Native@2x.png" width="178" height="81"></a>
 
