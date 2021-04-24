@@ -1,7 +1,3 @@
-<a href="https://www.ramotion.com/agency/app-development/?utm_source=gthb&utm_medium=repo&utm_campaign=circle-menu-android"><img src="https://github.com/Ramotion/folding-cell/blob/master/header.png"></a>
-
-<a href="https://github.com/Ramotion/circle-menu-android">
-<img align="left" src="https://github.com/Ramotion/circle-menu-android/blob/master/preview.gif" width="480" height="360" /></a>
 
 <p><h1 align="left">CIRCLE MENU [JAVA]</h1></p>
 
@@ -149,20 +145,3 @@ Here are the attributes you can specify through XML or related setters:
 <img src="https://github.com/ramotion/navigation-stack/raw/master/React Native@2x.png" width="178" height="81"></a>
 
 
-## 📄 License
-
-Circle Menu Android is released under the MIT license.
-See [LICENSE](./LICENSE) for details.
-
-This library is a part of a <a href="https://github.com/Ramotion/android-ui-animation-components-and-libraries"><b>selection of our best UI open-source projects</b></a>
-
-If you use the open-source library in your project, please make sure to credit and backlink to www.ramotion.com
-
-## 📱 Get the Showroom App for Android to give it a try
-Try this UI component and more like this in our Android app. Contact us if interested.
-
-<a href="https://play.google.com/store/apps/details?id=com.ramotion.showroom" >
-<img src="https://raw.githubusercontent.com/Ramotion/react-native-circle-menu/master/google_play@2x.png" width="104" height="34"></a>
-
-<a href="https://www.ramotion.com/agency/app-development/?utm_source=gthb&utm_medium=repo&utm_campaign=circle-menu-android">
-<img src="https://github.com/ramotion/gliding-collection/raw/master/contact_our_team@2x.png" width="187" height="34"></a>
