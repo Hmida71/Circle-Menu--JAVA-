@@ -1,102 +1,168 @@
-#-------------------Circle-Menu--JAVA-------------------#
+<a href="https://www.ramotion.com/agency/app-development/?utm_source=gthb&utm_medium=repo&utm_campaign=circle-menu-android"><img src="https://github.com/Ramotion/folding-cell/blob/master/header.png"></a>
 
-<img src="https://raw.githubusercontent.com/Ramotion/circle-menu-android/master/preview.gif" alt="circle" width="480px" height="360px" />
+<a href="https://github.com/Ramotion/circle-menu-android">
+<img align="left" src="https://github.com/Ramotion/circle-menu-android/blob/master/preview.gif" width="480" height="360" /></a>
 
-#a-simple-elegant-ui-menu-with-a-circular-layout-and-material-design-animations !!
-<hr/>
-<ul>
-<li>Android 4.1 Jelly Bean (API lvl 16) or greater</li>
-<li>Your favorite IDE</li>
-</ul>
-<hr/>
-# Installation :
-​Just download the package from here and add it to your project classpath, or just use the maven repo:
+<p><h1 align="left">CIRCLE MENU [JAVA]</h1></p>
+
+<h4>A simple, elegant UI menu with a circular layout and material design animations</h4>
+
+
+___
+
+
+<p><h6>We specialize in the designing and coding of custom UI for Mobile Apps and Websites.</h6>
+<a href="https://www.ramotion.com/agency/app-development/?utm_source=gthb&utm_medium=repo&utm_campaign=circle-menu-android">
+<img src="https://github.com/ramotion/gliding-collection/raw/master/contact_our_team@2x.png" width="187" height="34"></a>
+</p>
+<p><h6>Stay tuned for the latest updates:</h6>
+<a href="https://goo.gl/rPFpid" >
+<img src="https://i.imgur.com/ziSqeSo.png/" width="156" height="28"></a></p>
+
+</br>
+
+[![Twitter](https://img.shields.io/badge/Twitter-@Ramotion-blue.svg?style=flat)](http://twitter.com/Ramotion)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/42eb7b00b93645c0812c045ab26cb3b7)](https://www.codacy.com/app/dvg4000/circle-menu-android?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Ramotion/circle-menu-android&amp;utm_campaign=Badge_Grade)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/Ramotion)
+
+
+## Requirements
+​
+- Android 4.1 Jelly Bean (API lvl 16) or greater
+- Your favorite IDE
+
+## Installation
+​
+Just download the package from [here](http://central.maven.org/maven2/com/ramotion/circlemenu/circle-menu/0.3.2/circle-menu-0.3.2.aar) and add it to your project classpath, or just use the maven repo:
 
 Gradle:
-<pre>implementation <span class="pl-s"><span class="pl-pds">'</span>com.ramotion.circlemenu:circle-menu:0.3.2<span class="pl-pds">'</span></span></pre>
+```groovy
+implementation 'com.ramotion.circlemenu:circle-menu:0.3.2'
+```
 SBT:
-<pre>libraryDependencies <span class="pl-k">+</span><span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>com.ramotion.circlemenu<span class="pl-pds">"</span></span> <span class="pl-k">%</span> <span class="pl-s"><span class="pl-pds">"</span>circle-menu<span class="pl-pds">"</span></span> <span class="pl-k">%</span> <span class="pl-s"><span class="pl-pds">"</span>0.3.2<span class="pl-pds">"</span></span></pre>
+```scala
+libraryDependencies += "com.ramotion.circlemenu" % "circle-menu" % "0.3.2"
+```
 Maven:
-<pre>&lt;<span class="pl-ent">dependency</span>&gt;
-	&lt;<span class="pl-ent">groupId</span>&gt;com.ramotion.circlemenu&lt;/<span class="pl-ent">groupId</span>&gt;
-	&lt;<span class="pl-ent">artifactId</span>&gt;circle-menu&lt;/<span class="pl-ent">artifactId</span>&gt;
-	&lt;<span class="pl-ent">version</span>&gt;0.3.2&lt;/<span class="pl-ent">version</span>&gt;
-&lt;/<span class="pl-ent">dependency</span>&gt;</pre>
+```xml
+<dependency>
+	<groupId>com.ramotion.circlemenu</groupId>
+	<artifactId>circle-menu</artifactId>
+	<version>0.3.2</version>
+</dependency>
+```
+​
 
-<hr/>
-# Basic usage :
+## Basic usage
 
-Place the CircleMenuView in your layout and set the icons and colors of the buttons, as shown below.
-<pre>app:button_colors="@array/colors"
-app:button_icons="@array/icons"</pre>
-<p>Example of arrays <code>colors</code> and <code>icons</code> in <code>res\values\buttons.xml</code>:</p>
-<pre>&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>?&gt;
-&lt;<span class="pl-ent">resources</span>&gt;
-    &lt;<span class="pl-ent">array</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>icons<span class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@drawable/ic_home_white_24dp&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@drawable/ic_search_white_24dp&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@drawable/ic_notifications_white_24dp&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@drawable/ic_settings_white_24dp&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@drawable/ic_place_white_24dp&lt;/<span class="pl-ent">item</span>&gt;
-    &lt;/<span class="pl-ent">array</span>&gt;
-    &lt;<span class="pl-ent">array</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>colors<span class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@android:color/holo_blue_light&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@android:color/holo_green_dark&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@android:color/holo_red_light&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@android:color/holo_purple&lt;/<span class="pl-ent">item</span>&gt;
-        &lt;<span class="pl-ent">item</span>&gt;@android:color/holo_orange_light&lt;/<span class="pl-ent">item</span>&gt;
-    &lt;/<span class="pl-ent">array</span>&gt;
-&lt;/<span class="pl-ent">resources</span>&gt;</pre>
+Place the `CircleMenuView` in your layout and set the icons and colors of the buttons, as shown below.
+```xml
+app:button_colors="@array/colors"
+app:button_icons="@array/icons"
+```
+
+Example of arrays `colors` and `icons` in `res\values\buttons.xml`:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/ic_home_white_24dp</item>
+        <item>@drawable/ic_search_white_24dp</item>
+        <item>@drawable/ic_notifications_white_24dp</item>
+        <item>@drawable/ic_settings_white_24dp</item>
+        <item>@drawable/ic_place_white_24dp</item>
+    </array>
+    <array name="colors">
+        <item>@android:color/holo_blue_light</item>
+        <item>@android:color/holo_green_dark</item>
+        <item>@android:color/holo_red_light</item>
+        <item>@android:color/holo_purple</item>
+        <item>@android:color/holo_orange_light</item>
+    </array>
+</resources>
+```
+
 Or use the constructor
+```java
+CircleMenuView(@NonNull Context context, @NonNull List<Integer> icons, @NonNull List<Integer> colors)
+```
+to add `CircleMenuView` and configure the buttons programmatically (in the code).
 
-<pre>CircleMenuView(<span class="pl-k">@NonNull</span> <span class="pl-smi">Context</span> context, <span class="pl-k">@NonNull</span> <span class="pl-k">List&lt;<span class="pl-smi">Integer</span>&gt;</span> icons, <span class="pl-k">@NonNull</span> <span class="pl-k">List&lt;<span class="pl-smi">Integer</span>&gt;</span> colors)</pre>
-to add CircleMenuView and configure the buttons programmatically (in the code).
+Next, connect the event handler `CircleMenuView.EventListener` as shown below,
+and override the methods you need.
 
-Next, connect the event handler CircleMenuView.EventListener as shown below, and override the methods you need.
-<pre><span class="pl-k">final</span> <span class="pl-smi">CircleMenuView</span> menu <span class="pl-k">=</span> (<span class="pl-smi">CircleMenuView</span>) findViewById(<span class="pl-smi">R</span><span class="pl-k">.</span>id<span class="pl-k">.</span>circle_menu);
-menu<span class="pl-k">.</span>setEventListener(<span class="pl-k">new</span> <span class="pl-smi">CircleMenuView</span>.<span class="pl-smi">EventListener</span>() {
-    <span class="pl-k">@Override</span>
-    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onMenuOpenAnimationStart</span>(<span class="pl-k">@NonNull</span> <span class="pl-smi">CircleMenuView</span> <span class="pl-v">view</span>) {
-        <span class="pl-smi">Log</span><span class="pl-k">.</span>d(<span class="pl-s"><span class="pl-pds">"</span>D<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>onMenuOpenAnimationStart<span class="pl-pds">"</span></span>);
+```java
+final CircleMenuView menu = (CircleMenuView) findViewById(R.id.circle_menu);
+menu.setEventListener(new CircleMenuView.EventListener() {
+    @Override
+    public void onMenuOpenAnimationStart(@NonNull CircleMenuView view) {
+        Log.d("D", "onMenuOpenAnimationStart");
     }
 
-    <span class="pl-k">@Override</span>
-    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onMenuOpenAnimationEnd</span>(<span class="pl-k">@NonNull</span> <span class="pl-smi">CircleMenuView</span> <span class="pl-v">view</span>) {
-        <span class="pl-smi">Log</span><span class="pl-k">.</span>d(<span class="pl-s"><span class="pl-pds">"</span>D<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>onMenuOpenAnimationEnd<span class="pl-pds">"</span></span>);
+    @Override
+    public void onMenuOpenAnimationEnd(@NonNull CircleMenuView view) {
+        Log.d("D", "onMenuOpenAnimationEnd");
     }
 
-    <span class="pl-k">@Override</span>
-    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onMenuCloseAnimationStart</span>(<span class="pl-k">@NonNull</span> <span class="pl-smi">CircleMenuView</span> <span class="pl-v">view</span>) {
-        <span class="pl-smi">Log</span><span class="pl-k">.</span>d(<span class="pl-s"><span class="pl-pds">"</span>D<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>onMenuCloseAnimationStart<span class="pl-pds">"</span></span>);
+    @Override
+    public void onMenuCloseAnimationStart(@NonNull CircleMenuView view) {
+        Log.d("D", "onMenuCloseAnimationStart");
     }
 
-    <span class="pl-k">@Override</span>
-    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onMenuCloseAnimationEnd</span>(<span class="pl-k">@NonNull</span> <span class="pl-smi">CircleMenuView</span> <span class="pl-v">view</span>) {
-        <span class="pl-smi">Log</span><span class="pl-k">.</span>d(<span class="pl-s"><span class="pl-pds">"</span>D<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>onMenuCloseAnimationEnd<span class="pl-pds">"</span></span>);
+    @Override
+    public void onMenuCloseAnimationEnd(@NonNull CircleMenuView view) {
+        Log.d("D", "onMenuCloseAnimationEnd");
     }
 
-    <span class="pl-k">@Override</span>
-    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onButtonClickAnimationStart</span>(<span class="pl-k">@NonNull</span> <span class="pl-smi">CircleMenuView</span> <span class="pl-v">view</span>, <span class="pl-k">int</span> <span class="pl-v">index</span>) {
-        <span class="pl-smi">Log</span><span class="pl-k">.</span>d(<span class="pl-s"><span class="pl-pds">"</span>D<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>onButtonClickAnimationStart| index: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> index);
+    @Override
+    public void onButtonClickAnimationStart(@NonNull CircleMenuView view, int index) {
+        Log.d("D", "onButtonClickAnimationStart| index: " + index);
     }
 
-    <span class="pl-k">@Override</span>
-    <span class="pl-k">public</span> <span class="pl-k">void</span> <span class="pl-en">onButtonClickAnimationEnd</span>(<span class="pl-k">@NonNull</span> <span class="pl-smi">CircleMenuView</span> <span class="pl-v">view</span>, <span class="pl-k">int</span> <span class="pl-v">index</span>) {
-        <span class="pl-smi">Log</span><span class="pl-k">.</span>d(<span class="pl-s"><span class="pl-pds">"</span>D<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>onButtonClickAnimationEnd| index: <span class="pl-pds">"</span></span> <span class="pl-k">+</span> index);
+    @Override
+    public void onButtonClickAnimationEnd(@NonNull CircleMenuView view, int index) {
+        Log.d("D", "onButtonClickAnimationEnd| index: " + index);
     }
-});</pre>
-<p>You can use <code>open(boolean animate)</code> and <code>close(boolean animate)</code> methods,
-to open and close menu programmatically</p>
-<p>Here are the attributes you can specify through XML or related setters:</p>
-<ul>
-<li><code>button_icons</code> - Array of buttons icons.</li>
-<li><code>button_colors</code> - Array of buttons colors.</li>
-<li><code>icon_menu</code> - Menu default icon.</li>
-<li><code>icon_close</code> - Menu closed icon.</li>
-<li><code>icon_color</code> - Menu icon color.</li>
-<li><code>duration_ring</code> - Ring effect duration.</li>
-<li><code>duration_open</code> - Menu opening animation duration.</li>
-<li><code>duration_close</code> - Menu closing animation duration.</li>
-<li><code>distance</code> - Distance between center button and buttons</li>
-</ul>
+});
+```
 
+You can use `open(boolean animate)` and `close(boolean animate)` methods,
+to open and close menu programmatically
+
+Here are the attributes you can specify through XML or related setters:
+* `button_icons` - Array of buttons icons.
+* `button_colors` - Array of buttons colors.
+* `icon_menu` - Menu default icon.
+* `icon_close` - Menu closed icon.
+* `icon_color` - Menu icon color.
+* `duration_ring` - Ring effect duration.
+* `duration_open` - Menu opening animation duration.
+* `duration_close` - Menu closing animation duration.
+* `distance` - Distance between center button and buttons
+
+<br>
+
+## 🗂 Check this library on other language:
+<a href="https://github.com/Ramotion/circle-menu"> 
+<img src="https://github.com/ramotion/navigation-stack/raw/master/Swift@2x.png" width="178" height="81"></a>
+<a href="https://github.com/Ramotion/react-native-circle-menu"> 
+<img src="https://github.com/ramotion/navigation-stack/raw/master/React Native@2x.png" width="178" height="81"></a>
+
+
+## 📄 License
+
+Circle Menu Android is released under the MIT license.
+See [LICENSE](./LICENSE) for details.
+
+This library is a part of a <a href="https://github.com/Ramotion/android-ui-animation-components-and-libraries"><b>selection of our best UI open-source projects</b></a>
+
+If you use the open-source library in your project, please make sure to credit and backlink to www.ramotion.com
+
+## 📱 Get the Showroom App for Android to give it a try
+Try this UI component and more like this in our Android app. Contact us if interested.
+
+<a href="https://play.google.com/store/apps/details?id=com.ramotion.showroom" >
+<img src="https://raw.githubusercontent.com/Ramotion/react-native-circle-menu/master/google_play@2x.png" width="104" height="34"></a>
+
+<a href="https://www.ramotion.com/agency/app-development/?utm_source=gthb&utm_medium=repo&utm_campaign=circle-menu-android">
+<img src="https://github.com/ramotion/gliding-collection/raw/master/contact_our_team@2x.png" width="187" height="34"></a>
