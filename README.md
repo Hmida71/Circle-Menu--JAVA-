@@ -133,7 +133,5 @@ Here are the attributes you can specify through XML or related setters:
 <img src="https://github.com/ramotion/navigation-stack/raw/master/React Native@2x.png" width="178" height="81" style="max-width:100%;"></a>
 
 
-## 📄 License
-
-Circle Menu Android is released under the MIT license.
-
+## 🚀🚀 Dz-TM071
+Circle Menu With JAVA & Animation Cool 🔥🔥
